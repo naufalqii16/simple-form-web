@@ -8,7 +8,7 @@
     <div id="feedback-form">
         <h1 class="header">Attendance Form</h1>
         <div>
-            <form action="/" method="post">
+            <form action="{{ url_for('presensi') }}" method="post">
                 <input type="text" id="name" name="name" placeholder="Name" required><br><br>
                 <input type="text" id="student-id" name="student-id" placeholder="Student ID" required><br><br>
                 <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>

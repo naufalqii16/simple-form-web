@@ -55,6 +55,16 @@
     color: #eee;
     font-weight: 700;
     box-shadow: 1px 4px 10px 1px #aaa;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  #feedback-form button[type=submit]:hover {
+      background: linear-gradient(135deg, #0056b3, #00aaff);
+      transform: scale(1.1);
+      box-shadow: 2px 6px 15px 2px #888;
+  }
     
     background: #207cca; /* Old browsers */
     background: -moz-linear-gradient(left, #207cca 0%, #9f58a3 100%); /* FF3.6-15 */
