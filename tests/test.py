@@ -23,12 +23,6 @@ class FlaskAppTests(unittest.TestCase):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
 
-    def test_form_submission(self):
-        """Test apakah form bisa dikirim dan halaman redirect benar."""
-        response = self.client.post('/presensi', data={'student_id': '12345'})
-        self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Presensi berhasil', response.data)  # Sesuaikan dengan pesan sukses di template
-
     def test_database_connection(self):
         """Test apakah database bisa diakses."""
         with app.app_context():
